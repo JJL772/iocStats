@@ -53,6 +53,8 @@
 #define RTEMS_VERSION_INT                                                      \
   VERSION_INT(__RTEMS_MAJOR__, __RTEMS_MINOR__, __RTEMS_REVISION__, 0)
 
+#include <stdlib.h>
+
 #if RTEMS_VERSION_INT <= VERSION_INT(5, 0, 0, 0)
 /*
  * This define effects rtems.h includes on 4.10 and earlier
